@@ -8,7 +8,7 @@ Question 3: What version is the requests library installed in the virtualenv?
 	2.26.0
 
 Question 4: What is the difference between the virtual environment and the not virtual environment python?
-	The operations done in the virtual environment will not affect the not virtual environment.
+	The versions of the requests library are different since the virtual environment allows us to create an isolated python environment.
 
 Question 5: What status code is returned for http://google.com ? What URL must you visit to get a 200 status code?
 	Returned status code: HTTP/1.1 301 Moved Permanently
@@ -20,5 +20,8 @@ Question 6: What status code is returned for http://google.com/teapot? Is it the
 	When curl http://www.google.com/teapot, it returns HTTP/2 418.
 
 Question 7: What changed in the output of https://webdocs.cs.ualberta.ca/~hindle1/1.py when you used -X POST? What is this method useful for?
+	The request method changed in the output.
+	-X specifies request command to use. In this case, -X POST specifies a POST method which creates a resource. (https://idratherbewriting.com/learnapidoc/docapis_understand_curl.html)
 
 Question 8: What is the raw URL to your Python script on GitHub?
+	https://raw.githubusercontent.com/WeiyiWu/CMPUT404Lab1/main/lab1.py

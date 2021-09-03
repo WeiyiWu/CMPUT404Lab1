@@ -1,7 +1,12 @@
 import requests
-import os
 print(requests.__version__)
 print(requests.get('https://www.google.com/'))
-#os.system("curl -i http://www.google.com/")
-os.system('curl -o lab1.py https://raw.githubusercontent.com/WeiyiWu/CMPUT404Lab1/main/lab1.py')
-os.system('curl https://raw.githubusercontent.com/WeiyiWu/CMPUT404Lab1/main/lab1.py')
+
+rawURL = 'https://raw.githubusercontent.com/WeiyiWu/CMPUT404Lab1/main/lab1.py'
+r = requests.get(rawURL, allow_redirects=True)
+# download python script
+# resource: https://www.tutorialspoint.com/downloading-files-from-web-using-python
+open('lab1.py', 'wb').write(r.content)
+# print source code
+print(r.content)
+
