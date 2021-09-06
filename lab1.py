@@ -8,5 +8,5 @@ r = requests.get(rawURL, allow_redirects=True)
 # resource: https://www.tutorialspoint.com/downloading-files-from-web-using-python
 open('lab1.py', 'wb').write(r.content)
 # print source code
-print(r.content)
+print(r.text)
 
